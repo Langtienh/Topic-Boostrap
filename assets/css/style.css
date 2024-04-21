@@ -170,7 +170,7 @@ img {
     margin-bottom: -100px;
 }
 
-.mcard{
+.mcard {
     cursor: pointer;
     margin-inline: auto;
     padding: 30px;
@@ -200,7 +200,7 @@ img {
 }
 
 #pills-tab .nav-link {
-    text-transform:capitalize;
+    text-transform: capitalize;
     font-size: 16px;
     color: #888;
 }
@@ -209,7 +209,7 @@ img {
     color: var(--curtom-color);
 }
 
-#how.overlay{
+#how.overlay {
     background: url(../images/why-bg.jpg);
     background-size: cover;
     background-position: center;
