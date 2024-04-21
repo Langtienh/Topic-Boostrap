@@ -1,0 +1,304 @@
+:root {
+    --navbar-height: 78px;
+    --curtom-color: #13547A;
+    --curtom-color-rgba: rgba(19, 84, 122, 1);
+    --curtom-color-rgb: 19, 84, 122;
+    --curtom-bg: #80D0C7;
+}
+
+.btn-curtom {
+    background-color: var(--curtom-bg);
+    color: #fff;
+    padding: 13px 16px 13px 20px;
+    font-size: inherit;
+    line-height: 1;
+}
+
+input[type="search"] {
+    outline: none;
+    border: none;
+}
+
+.btn-curtom:hover,
+.btn-curtom:active {
+    background-color: var(--curtom-color);
+    color: #fff;
+}
+
+.text-curtom {
+    color: var(--curtom-color);
+}
+
+.text-hover-curtom:hover {
+    color: var(--curtom-color);
+}
+
+.bg-curtom {
+    background-color: var(--curtom-bg);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar-dark {
+    --bs-navbar-color: rgba(255, 255, 255, 1);
+    --bs-navbar-hover-color: var(--curtom-color-rgba);
+    --bs-navbar-active-color: var(--curtom-color);
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 1);
+}
+
+.navbar-bg {
+    background-color: var(--curtom-bg);
+}
+
+/* height navbar = brand-font-size * 1.5 + padding-y */
+.navbar-brand {
+    --bs-navbar-brand-color: #000;
+    --bs-navbar-brand-hover-color: #000;
+    --bs-navbar-brand-font-size: 32px;
+    --bs-navbar-brand-padding-y: calc(((var(--navbar-height) - var(--bs-navbar-brand-font-size) * 1.5) - 16px) / 2);
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-hover-color: var(--curtom-color);
+    --bs-dropdown-link-active-color: var(--curtom-color);
+}
+
+.nav-item {
+    --bs-navbar-nav-link-padding-x: 1rem;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.dropdown-item {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+img[alt="logo"] {
+    height: 32px;
+}
+
+section {
+    padding-block: 100px;
+}
+
+.hero-section {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    position: relative;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.fa-user {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #000;
+}
+
+.fa-user:hover {
+    background-color: #13547A;
+    color: #fff;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+#section2 {
+    padding-block: 0 100px;
+    background-color: var(--curtom-bg);
+    border-radius: 0 0 100px 100px;
+}
+
+.overlay {
+    position: relative;
+    background: url(../images/businesswoman-using-tablet-analysis.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    opacity: 0.8;
+}
+
+.overlay-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+a {
+    color: rgba(128, 208, 199, var(--bs-link-opacity, 1));
+    text-decoration: underline
+}
+
+a:hover {
+    color: var(--curtom-color)
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.-top-100 {
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+}
+
+.mcard{
+    cursor: pointer;
+    margin-inline: auto;
+    padding: 30px;
+    border-radius: 30px;
+    position: relative;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.mcard img {
+    margin-top: 35px;
+    height: 200px;
+}
+
+.mcard:hover {
+    transform: translateY(-6px);
+}
+
+#pills-tab .nav-item {
+    --bs-nav-link-padding-x: 10px;
+    --bs-nav-link-padding-y: 10px;
+}
+
+#pills-tab .nav-link.active {
+    border-bottom: 2px solid var(--curtom-color);
+}
+
+#pills-tab .nav-link {
+    text-transform:capitalize;
+    font-size: 16px;
+    color: #888;
+}
+
+#pills-tab .nav-link:hover {
+    color: var(--curtom-color);
+}
+
+#how.overlay{
+    background: url(../images/why-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mcircle {
+    flex: 0 0 104px;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background-color: var(--curtom-bg);
+    position: relative;
+}
+
+.mcircle:hover,
+.mcircle.active {
+    background-color: var(--curtom-color);
+}
+
+.mcircle::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.mcircle i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    padding-block: 100px;
+}
+
+/* reponsive */
+/* --bs-breakpoint-xs: 0;
+--bs-breakpoint-sm: 576px;
+--bs-breakpoint-md: 768px;
+--bs-breakpoint-lg: 992px;
+--bs-breakpoint-xl: 1200px;
+--bs-breakpoint-xxl: 1400px */
+
+@media (min-width: 576px) {
+    .sm-hiden {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .md-hiden {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .lg-hiden {
+        opacity: 0;
+    }
+
+    #pills-tab .nav-item {
+        --bs-nav-link-padding-x: 25px;
+        --bs-nav-link-padding-y: 15px;
+    }
+
+    #pills-tab .nav-link {
+        margin-right: 20px;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #888;
+    }
+}
+
+@media (min-width: 1200px) {
+    .xl-hiden {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .xxl-hiden {
+        opacity: 0;
+    }
+}
